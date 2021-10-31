@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1 {
-font-family: 'Splatoon1 (1)', Arial, sans-serif;
-font-weight:normal;
-font-style:normal;
-}
-@font-face {
-font-family: "Splatoon1 (1)";
-src:url("font/Splatoon1 (1).otf") format("opentype");
+<@font-face {
+  font-family: 'Splatoon1';
+    src: url('font/Splatoon1.eot'); /* IE9 Compat Modes */
+    src: url('font/Splatoon1.eot') format('embedded-opentype'), /* IE6-IE8 */
+        url('font/Splatoon1.woff2') format('woff2'), /* Super Modern Browsers */
+        url('font/Splatoon1.woff') format('woff'), /* Pretty Modern Browsers */
+        url('font/Splatoon1.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('font/Splatoon1.svg') format('svg'); /* Legacy iOS */
+    font-weight: 400;
+    font-style: normal;
 }
 
 <p> Time Until next Rotation
