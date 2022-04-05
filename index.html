@@ -10,7 +10,19 @@
    </head>
    <body>
       <h1><p> Time Until next Rotation
-<iframe src="https://free.timeanddate.com/countdown/i81s0hqh/n137/cf11/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/iso2021-10-31T19:00:00" allowtransparency="true" frameborder="0" width="290" height="19"></iframe><h1>Splatoon Wii U Map Rotations!<h1>
+function buildTimerString(hours,minutes,seconds){var timer_text='';if(hours==1)
+timer_text+=hours+' hour ';else if(hours>1)
+timer_text+=hours+' hours ';if(minutes==0&&hours>0)
+timer_text+=minutes+' minutes ';else if(minutes==1)
+timer_text+=minutes+' minute ';else if(minutes>1)
+timer_text+=minutes+' minutes ';if(seconds==1)
+timer_text+=seconds+' second';else
+timer_text+=seconds+' seconds';return timer_text;}
+function buildTitleString(hours,minutes,seconds){var title_text='';if(hours)
+title_text+=hours+'H ';if(hours||minutes)
+title_text+=minutes+'M ';title_text+=seconds+'S';return title_text;}
+function pad2(i){var str=(i|0).toString(10);if(i<10)
+str='0'+str;return str;} allowtransparency="true" frameborder="0" width="290" height="19"></iframe><h1>Splatoon Wii U Map Rotations!<h1>
       Hold On to your Tentacles! It's time for Inkopolis news! </br>
       Here are the current Turf War Maps on Rotation for today! </br>
 <p> [10-31]
